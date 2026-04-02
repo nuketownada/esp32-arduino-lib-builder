@@ -1,4 +1,4 @@
-name: IDF v5.1
+name: IDF v4.4
 on:
   workflow_dispatch:  # Manually start a workflow
 
@@ -6,6 +6,8 @@ jobs:
   build-libs:
     name: Build Arduino Libs
     runs-on: macos-14
+    env:
+      IDF_BRANCH: release/v4.4
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
