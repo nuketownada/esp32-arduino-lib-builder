@@ -9,7 +9,7 @@ jobs:
     env:
       IDF_BRANCH: release/v4.4
       IDF_REPO: espressif/esp-idf
-      AR_BRANCH: release/v2.x
+      AR_BRANCH: "2.0.18"
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
