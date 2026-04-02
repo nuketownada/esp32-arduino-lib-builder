@@ -8,6 +8,7 @@ jobs:
     runs-on: macos-14
     env:
       IDF_BRANCH: release/v4.4
+      IDF_REPO: espressif/esp-idf
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
