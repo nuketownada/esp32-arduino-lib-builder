@@ -36,7 +36,9 @@ AR_USER="tasmota"
 
 # The full name of the repository
 AR_REPO="$AR_USER/arduino-esp32"
-IDF_REPO="$AR_USER/esp-idf"
+if [ -z "$IDF_REPO" ]; then
+    IDF_REPO="$AR_USER/esp-idf"
+fi
 AR_LIBS_REPO="$AR_USER/esp32-arduino-libs"
 
 AR_REPO_URL="https://github.com/$AR_REPO.git"
